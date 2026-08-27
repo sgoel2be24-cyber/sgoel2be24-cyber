@@ -1,0 +1,87 @@
+name: pr-counts
+
+# The two upstream-contribution counters on the profile README are generated
+# here rather than typed. They drift slowly but silently, which is the exact
+# failure this profile claims not to have.
+#
+# "merged" deliberately means what GitHub means by merged. Contributions that
+# land another way — google/adk-python takes patches through Copybara, so the
+# PR closes and the commit appears authored by you on main — are real but do
+# not appear in this count. Those are described in the README table instead of
+# being quietly folded into a number.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pr-counts.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pr-counts
+  cancel-in-progress: false
+
+jobs:
+  counts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query GitHub search
+        id: q
+        env:
+          GH_TOKEN: ${{ github.token }}
+          USER_LOGIN: ${{ github.repository_owner }}
+        run: |
+          set -euo pipefail
+
+          # -user:<login> excludes the author's own repositories, so these count
+          # contributions to other people's projects only.
+          merged="$(gh api -X GET search/issues \
+            -f q="author:${USER_LOGIN} is:pr is:merged -user:${USER_LOGIN}" \
+            --jq '.total_count')"
+
+          open_count="$(gh api -X GET search/issues \
+            -f q="author:${USER_LOGIN} is:pr is:open -user:${USER_LOGIN}" \
+            --jq '.total_count')"
+
+          # A transient API hiccup returning an empty string would otherwise
+          # publish a blank badge; refuse instead and keep the previous values.
+          case "$merged" in ''|*[!0-9]*) echo "bad merged count: '$merged'" >&2; exit 1;; esac
+          case "$open_count" in ''|*[!0-9]*) echo "bad open count: '$open_count'" >&2; exit 1;; esac
+
+          echo "merged=$merged" >> "$GITHUB_OUTPUT"
+          echo "open=$open_count" >> "$GITHUB_OUTPUT"
+          echo "Merged upstream: $merged | open upstream: $open_count"
+
+      - name: Publish badge endpoints
+        run: |
+          set -e
+          stamp="$(date -u +'%Y-%m-%d')"
+          rm -rf .badges && mkdir .badges
+          cd .badges
+          git init -q
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          if git fetch -q --depth 1 origin badges 2>/dev/null; then
+            git checkout -q FETCH_HEAD -- . 2>/dev/null || true
+            git checkout -qb badges
+          else
+            git checkout -qb badges
+          fi
+
+          write_badge () {
+            printf '{"schemaVersion":1,"label":"%s","message":"%s","color":"%s"}\n' "$1" "$2" "$3" > "$4"
+          }
+
+          write_badge "merged upstream" "${{ steps.q.outputs.merged }}" "38BDAF" pr-merged.json
+          write_badge "in review"       "${{ steps.q.outputs.open }}"   "203a43" pr-open.json
+          write_badge "counts checked"  "$stamp"                        "6f7c7a" pr-checked.json
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "pr-counts: ${stamp}" || { echo "nothing changed"; exit 0; }
+          git push -q --force origin badges
