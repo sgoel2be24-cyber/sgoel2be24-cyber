@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Shikhar%20Goel&fontSize=54&fontColor=ffffff&fontAlignY=35&desc=AI%20%26%20Systems%20Engineer&descAlignY=55&descSize=18" width="100%" />
+# Shikhar Goel
+
+**AI &amp; Systems Engineer**
 
 <a href="https://portfolio-website-zeta-dun-27.vercel.app/">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=900&color=38BDAF&center=true&vCenter=true&width=650&lines=Deterministic+code+decides.+Models+only+observe.;Agents+with+stopping+conditions%2C+not+vibes.;Go+job+queues%2C+Python+routers%2C+TypeScript+debuggers.;Shipping+at+Thapar+%E2%80%A2+B.E.+CSE+'28" alt="Typing SVG" />
@@ -87,16 +89,18 @@ Contributions merged into projects I actually use:
 
 ---
 
-## By the numbers
+## Track record
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=sgoel2be24-cyber&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&title_color=38BDAF&icon_color=38BDAF&text_color=9f9f9f&bg_color=0d1117" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sgoel2be24-cyber&layout=compact&langs_count=8&hide_border=true&title_color=38BDAF&text_color=9f9f9f&bg_color=0d1117&exclude_repo=project_SE3,ucs503p-202627odd-template" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sgoel2be24-cyber&bg_color=0d1117&color=38BDAF&line=38BDAF&point=ffffff&area=true&hide_border=true" width="98%" />
+![Orchestrate](https://img.shields.io/badge/HackerRank_Orchestrate-%2337_of_1,773-38BDAF?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Upstream_PRs_merged-2-38BDAF?style=for-the-badge)
+![Open](https://img.shields.io/badge/Upstream_PRs_open-3-203A43?style=for-the-badge)
 
 </div>
+
+Merged into **google/adk-python** and **topoteretes/cognee** — both projects I use daily. Open work in
+flight on **corsairdev/corsair** (a 48-operation Pinecone integration) and a regression test back in ADK.
 
 ---
 
@@ -108,8 +112,6 @@ Contributions merged into projects I actually use:
 - 💼 AI internships across a FastAPI + React analytics stack and RAG pipeline work
 
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" width="100%" />
 
 <sub><i>If a loop runs more than once, it needs a verifier and a budget.</i></sub>
 
