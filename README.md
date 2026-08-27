@@ -63,13 +63,13 @@ claim ships with the evidence that produced it.
 
 ## Open source
 
-Four merges into projects I actually use, plus work in flight:
+Patches landed in projects I actually use, plus work in flight. Counts below are generated daily from GitHub search, not typed:
 
 | Project | PR | What it did |
 |---|---|---|
 | **[numpy/numpy](https://github.com/numpy/numpy)** | [#32386](https://github.com/numpy/numpy/pull/32386) ✅ **merged** | `BUG: close duplicated file descriptor if fdopen fails` — C-level fix closing a descriptor leak in NumPy's error path, with regression tests handling WASM/musl. All 91 required CI checks passed. |
 | **[apache/magpie](https://github.com/apache/magpie)** | [#1089](https://github.com/apache/magpie/pull/1089) ✅ **merged** | `fix(license-compliance-audit): handle large blobs and canonical SPDX` — files over ~1 MiB return without inline content, so the audit silently mis-flagged them as non-compliant. Fetches via raw-media API, separates *uninspected* from *violating*, enforces canonical `Apache-2.0`. Closed issue #944. |
-| **[google/adk-python](https://github.com/google/adk-python)** | [#6419](https://github.com/google/adk-python/pull/6419) ✅ **merged** | `fix: handle Windows paths in adk eval` — the eval-case parser read the colon in `C:\` as a case selector. |
+| **[google/adk-python](https://github.com/google/adk-python)** | [#6419](https://github.com/google/adk-python/pull/6419) ✅ **landed** | `fix: handle Windows paths in adk eval` — the eval-case parser read the colon in `C:\` as a case selector. Google lands patches through Copybara, so the PR shows closed while the change is on `main` as [`6f6106f`](https://github.com/google/adk-python/commit/6f6106f), authored by me and shipped in `v2.6.0` and `v2.8.0`. |
 | **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | [#4126](https://github.com/topoteretes/cognee/pull/4126) ✅ **merged** | `fix(cli): reject dry runs in API dispatch mode` — `--dry-run` was silently ignored when `--api-url` was set, executing real remote operations. |
 | **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | [#4161](https://github.com/topoteretes/cognee/pull/4161) 🔄 open | `fix(api): scope configuration lookup to authenticated owner` — any authenticated user could read any config by UUID. |
 | **[corsairdev/corsair](https://github.com/corsairdev/corsair)** | [#1200](https://github.com/corsairdev/corsair/pull/1200) 🔄 open | `feat(pinecone): production-grade integration` — 48 operations across four API surfaces, typed Zod schemas, dynamic host routing. |
@@ -142,15 +142,17 @@ LLM observability stack.
 
 <div align="center">
 
-![Merged](https://img.shields.io/badge/Upstream_PRs_merged-4-38BDAF?style=for-the-badge)
-![Open](https://img.shields.io/badge/In_review-3-203A43?style=for-the-badge)
+[![merged upstream](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsgoel2be24-cyber%2Fsgoel2be24-cyber%2Fbadges%2Fpr-merged.json&style=for-the-badge)](https://github.com/sgoel2be24-cyber/sgoel2be24-cyber/actions/workflows/pr-counts.yml)
+[![in review](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsgoel2be24-cyber%2Fsgoel2be24-cyber%2Fbadges%2Fpr-open.json&style=for-the-badge)](https://github.com/sgoel2be24-cyber/sgoel2be24-cyber/actions/workflows/pr-counts.yml)
 ![Orchestrate](https://img.shields.io/badge/HackerRank_Orchestrate-%2337_of_1,773-38BDAF?style=for-the-badge)
 
 </div>
 
-Merged into **NumPy**, **Apache Magpie** (Apache Software Foundation), **Google's Agent Development
-Kit** and **Cognee**. Anthropic certified across AI Fluency, MCP, Agent Skills and Subagents;
-Walmart Global Tech Advanced Software Engineering and Deloitte Cyber job simulations.
+Code landed in **NumPy**, **Apache Magpie** (Apache Software Foundation), **Google's Agent
+Development Kit** and **Cognee**. Open review threads across **Apache Airflow**, **pandas**,
+**LiteLLM**, **Buzz**, **Microsoft Agent Framework**, **corsair**, **cognee** and **ADK**.
+Anthropic certified across AI Fluency, MCP, Agent Skills and Subagents; Walmart Global Tech
+Advanced Software Engineering and Deloitte Cyber job simulations.
 
 <div align="center">
 
