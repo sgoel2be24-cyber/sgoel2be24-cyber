@@ -7,7 +7,7 @@
 <sub>Open to software engineering internships · Summer 2027</sub>
 
 <a href="https://portfolio-website-zeta-dun-27.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3200&pause=900&color=38BDAF&center=true&vCenter=true&width=700&lines=Crash-safe+by+construction%3A+WAL%2C+fencing+tokens%2C+F_FULLFSYNC.;627+regexes+benchmarked.+0+false+positives%2C+0+misses.;Merged+into+NumPy%2C+Apache+Magpie%2C+Google+ADK+and+Cognee.;Deterministic+code+decides.+Models+only+observe." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3400&pause=900&color=38BDAF&center=true&vCenter=true&width=760&lines=Merged+a+file-descriptor+leak+fix+into+NumPy;Landed+a+license-audit+fix+in+Apache+Magpie;Shipped+a+path-parsing+fix+in+Google+Agent+Development+Kit;Built+a+Go+job+queue+that+survives+50+kill+-9+trials;ReDoS+analyzer+with+0+false+positives+across+627+regexes;Ranked+%2337+of+1%2C773+at+HackerRank+Orchestrate" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -74,22 +74,6 @@ Patches landed in projects I actually use, plus work in flight. Counts below are
 | **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | [#4161](https://github.com/topoteretes/cognee/pull/4161) 🔄 open | `fix(api): scope configuration lookup to authenticated owner` — any authenticated user could read any config by UUID. |
 | **[corsairdev/corsair](https://github.com/corsairdev/corsair)** | [#1200](https://github.com/corsairdev/corsair/pull/1200) 🔄 open | `feat(pinecone): production-grade integration` — 48 operations across four API surfaces, typed Zod schemas, dynamic host routing. |
 | **[google/adk-python](https://github.com/google/adk-python)** | [#6705](https://github.com/google/adk-python/pull/6705) 🔄 open | `test: pin EvalCase session state injection` — regression test locking state injection into instruction templates. |
-
----
-
-## What I chose not to do
-
-Output is easy to list; restraint isn't. Three decisions I'd want a reviewer to see:
-
-| Decision | Reasoning |
-|---|---|
-| **Stood down on [cognee#4131](https://github.com/topoteretes/cognee/issues/4131)** | Investigated the defect, then found four active PRs already covering the concrete fix. A duplicate PR spends a maintainer's review budget without adding anything, so I closed my branch instead of opening it. |
-| **Called the Facillima rebuild** | I'd shipped the platform end to end in Next.js when the company asked for a WordPress version to match their main site. I didn't have the runway to do that properly, and said so rather than hand over something half-migrated. |
-| **Kept the review note on [corsair#1200](https://github.com/corsairdev/corsair/pull/1200)** | Review found input schemas weren't validated at runtime before request construction. It's a real gap in my patch — catching it pre-merge is what review is for, and it stays open until it's fixed. |
-
-The same instinct shows up in the code: Conveyor's invariants were verified by
-mutation — reintroduce the bug, confirm a test fails — because a test nobody has
-seen fail isn't evidence of anything.
 
 ---
 
