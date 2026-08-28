@@ -23,19 +23,17 @@
 
 ### `whoami`
 
-```go
-type Shikhar struct {
-    Role     string   // "Software Engineer"
-    Studying string   // "B.E. Computer Engineering @ Thapar Institute (2024–2028)"
-    Depth    []string // {"distributed systems", "static analysis", "native macOS", "AI agents"}
-    Thesis   string   // "A claim isn't real until something measures it."
-}
-```
+|  |  |
+|:--|:--|
+| **Education** | B.E. Computer Engineering — Thapar Institute of Engineering &amp; Technology, 2024–2028 |
+| **Based in** | India |
+| **Works on** | Durable backend systems · static analysis · native macOS · agent and evaluation tooling |
+| **Currently** | Hardening [conveyor-job-queue](https://github.com/sgoel2be24-cyber/conveyor-job-queue) and packaging [redoscope](https://github.com/sgoel2be24-cyber/redoscope) for release |
+| **Reach me** | [Portfolio](https://portfolio-website-zeta-dun-27.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/shikhar-goel01/) · [shikhardeepgoel@gmail.com](mailto:shikhardeepgoel@gmail.com) |
 
-I write systems that hold up when things go wrong — crash-safe storage, fault-tolerant dispatch,
-analyzers that prove an exploit rather than flagging a smell. The AI work sits on the same
-foundation: models emit typed observations, deterministic code makes the decisions, and every
-claim ships with the evidence that produced it.
+I build durable backend systems and developer tooling — crash-safe storage, fault-tolerant
+dispatch, and analyzers that produce a working exploit rather than a warning. The agent and
+evaluation work runs on the same stack.
 
 ---
 
