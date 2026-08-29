@@ -16,13 +16,6 @@
 <a href="https://www.linkedin.com/in/shikhar-goel01/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:shikhardeepgoel@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
-<br/>
-
-[![merged upstream](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsgoel2be24-cyber%2Fsgoel2be24-cyber%2Fbadges%2Fpr-merged.json&style=for-the-badge)](https://github.com/sgoel2be24-cyber/sgoel2be24-cyber/actions/workflows/pr-counts.yml)
-[![in review](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsgoel2be24-cyber%2Fsgoel2be24-cyber%2Fbadges%2Fpr-open.json&style=for-the-badge)](https://github.com/sgoel2be24-cyber/sgoel2be24-cyber/actions/workflows/pr-counts.yml)
-![Orchestrate](https://img.shields.io/badge/HackerRank_Orchestrate-%2337_of_1,773-38BDAF?style=for-the-badge)
-[![counts checked](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsgoel2be24-cyber%2Fsgoel2be24-cyber%2Fbadges%2Fpr-checked.json&style=for-the-badge)](https://github.com/sgoel2be24-cyber/sgoel2be24-cyber/actions/workflows/pr-counts.yml)
-
 </div>
 
 ---
@@ -45,8 +38,7 @@ evaluation work runs on the same stack.
 
 ## Open source
 
-Patches landed in projects I use. The counts in the header are generated daily from GitHub
-search rather than typed, so they cannot drift.
+Patches landed in projects I use. Every row links to the merge or the landing commit.
 
 | Project | Change | What it did |
 |---|---|---|
@@ -203,7 +195,5 @@ Advanced Software Engineering · Deloitte Cyber · Google Ads Apps
 
 ---
 
-<sub>The contribution counters above are rebuilt every day by
-[pr-counts](https://github.com/sgoel2be24-cyber/sgoel2be24-cyber/actions/workflows/pr-counts.yml);
-Conveyor's crash-safety and throughput figures are re-measured by
+<sub>Conveyor's crash-safety and throughput figures are re-measured on every push by
 [verify](https://github.com/sgoel2be24-cyber/conveyor-job-queue/actions/workflows/verify.yml).</sub>
