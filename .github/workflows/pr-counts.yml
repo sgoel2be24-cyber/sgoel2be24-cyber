@@ -1,14 +1,23 @@
 name: pr-counts
 
-# The two upstream-contribution counters on the profile README are generated
-# here rather than typed. They drift slowly but silently, which is the exact
-# failure this profile claims not to have.
+# The upstream-contribution counters on the profile README are generated here
+# rather than typed. Hand-typed counters drift slowly and silently, which is
+# the exact failure this profile claims not to have.
 #
-# "merged" deliberately means what GitHub means by merged. Contributions that
-# land another way — google/adk-python takes patches through Copybara, so the
-# PR closes and the commit appears authored by you on main — are real but do
-# not appear in this count. Those are described in the README table instead of
-# being quietly folded into a number.
+# Two things are counted, and both are verified against GitHub at run time:
+#
+#   1. PRs GitHub itself reports as merged into someone else's repository.
+#
+#   2. PRs that landed through a maintainer's import bot. Google's adk-python
+#      runs Copybara: the patch is imported, committed to main authored by the
+#      contributor, and the PR is then labelled "merged" and closed. GitHub's
+#      search index does not count these, because the commit that reaches main
+#      has a different SHA than anything on the PR branch. They are real merges
+#      and are counted here -- but only after this workflow confirms, for each
+#      one, that the named commit exists on the upstream default branch AND is
+#      authored by this account. An entry that stops verifying stops counting.
+#
+# Nothing in this file lets a number go up without a commit backing it.
 
 on:
   workflow_dispatch:
@@ -25,6 +34,11 @@ permissions:
 concurrency:
   group: pr-counts
   cancel-in-progress: false
+
+env:
+  # repo:commit:pr -- landings to verify and count. One per line.
+  IMPORT_LANDINGS: |
+    google/adk-python:6f6106f672d26596f909bd555e954825ba4044b4:6419
 
 jobs:
   counts:
@@ -53,9 +67,45 @@ jobs:
           case "$merged" in ''|*[!0-9]*) echo "bad merged count: '$merged'" >&2; exit 1;; esac
           case "$open_count" in ''|*[!0-9]*) echo "bad open count: '$open_count'" >&2; exit 1;; esac
 
-          echo "merged=$merged" >> "$GITHUB_OUTPUT"
+          echo "GitHub-indexed merges: $merged"
+
+          # --- verify each import-bot landing -------------------------------
+          landed=0
+          while IFS= read -r entry; do
+            [ -n "$entry" ] || continue
+            repo="${entry%%:*}"; rest="${entry#*:}"
+            sha="${rest%%:*}";  pr="${rest##*:}"
+
+            # The commit must exist on the upstream default branch and be
+            # authored by this account. Either check failing drops the entry.
+            author="$(gh api "repos/${repo}/commits/${sha}" --jq '.author.login // empty' 2>/dev/null || true)"
+            if [ "$author" != "$USER_LOGIN" ]; then
+              echo "SKIP ${repo}#${pr}: ${sha} not authored by ${USER_LOGIN} (got '${author:-none}')" >&2
+              continue
+            fi
+
+            default_branch="$(gh api "repos/${repo}" --jq '.default_branch')"
+            reachable="$(gh api -X GET "repos/${repo}/compare/${default_branch}...${sha}" --jq '.status' 2>/dev/null || true)"
+            if [ "$reachable" != "identical" ] && [ "$reachable" != "behind" ]; then
+              echo "SKIP ${repo}#${pr}: ${sha} not reachable from ${default_branch} (status '${reachable:-none}')" >&2
+              continue
+            fi
+
+            # Guard against double counting if the PR is ever also indexed as merged.
+            pr_merged="$(gh api "repos/${repo}/pulls/${pr}" --jq '.merged' 2>/dev/null || echo false)"
+            if [ "$pr_merged" = "true" ]; then
+              echo "SKIP ${repo}#${pr}: already counted by GitHub search" >&2
+              continue
+            fi
+
+            echo "OK   ${repo}#${pr} landed as ${sha:0:7}"
+            landed=$((landed + 1))
+          done <<< "${IMPORT_LANDINGS}"
+
+          total=$((merged + landed))
+          echo "merged=$total" >> "$GITHUB_OUTPUT"
           echo "open=$open_count" >> "$GITHUB_OUTPUT"
-          echo "Merged upstream: $merged | open upstream: $open_count"
+          echo "Merged upstream: $total (${merged} indexed + ${landed} imported) | open: $open_count"
 
       - name: Publish badge endpoints
         run: |
