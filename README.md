@@ -6,10 +6,6 @@
 
 <sub>Open to software engineering internships · Summer 2027</sub>
 
-<a href="https://portfolio-website-zeta-dun-27.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3400&pause=900&color=38BDAF&center=true&vCenter=true&width=760&lines=Merged+a+file-descriptor+leak+fix+into+NumPy;Landed+a+license-audit+fix+in+Apache+Magpie;Shipped+a+path-parsing+fix+in+Google+Agent+Development+Kit;Built+a+Go+job+queue+that+survives+50+kill+-9+trials;ReDoS+analyzer+with+0+false+positives+across+627+regexes;Ranked+%2337+of+1%2C773+at+HackerRank+Orchestrate" alt="Typing SVG" />
-</a>
-
 <br/>
 
 <a href="https://portfolio-website-zeta-dun-27.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-20232A?style=for-the-badge&logo=vercel&logoColor=white" /></a>
@@ -17,6 +13,16 @@
 <a href="mailto:shikhardeepgoel@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 </div>
+
+```text
+# my code, in other people's repositories
+
+f7820d6  corsairdev/corsair  +3,948  pinecone integration, 48 operations
+444afc2  numpy/numpy            +28  file-descriptor leak on the error path
+99c983b  apache/magpie          +93  license audit: large blobs, canonical SPDX
+6f6106f  google/adk-python      +76  windows path parsing in `adk eval`
+2de7ab0  topoteretes/cognee     +28  cli dry-run guard in API dispatch
+```
 
 ---
 
