@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="44" viewBox="0 0 900 44" role="img" aria-label="Recent shipped work">
+  <title>Recent shipped work</title>
+  <style>
+    .ln {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 16px; font-weight: 500; fill: #1f2328;
+    }
+    .pl  { fill: #1a7f37; font-weight: 700; }
+    .sha { fill: #818b98; }
+    @media (prefers-color-scheme: dark) {
+      .ln  { fill: #e6edf3; }
+      .pl  { fill: #3fb950; }
+      .sha { fill: #7d8590; }
+    }
+    #reel { animation: roll 24.15s steps(1, end) infinite; }
+    @media (prefers-reduced-motion: no-preference) {
+      #reel { animation: roll 24.15s cubic-bezier(.2,.8,.2,1) infinite; }
+    }
+    @keyframes roll {
+    0.0000% { transform: translateY(0px); }
+    12.0083% { transform: translateY(0px); }
+    14.2857% { transform: translateY(-44px); }
+    26.2940% { transform: translateY(-44px); }
+    28.5714% { transform: translateY(-88px); }
+    40.5797% { transform: translateY(-88px); }
+    42.8571% { transform: translateY(-132px); }
+    54.8654% { transform: translateY(-132px); }
+    57.1429% { transform: translateY(-176px); }
+    69.1511% { transform: translateY(-176px); }
+    71.4286% { transform: translateY(-220px); }
+    83.4369% { transform: translateY(-220px); }
+    85.7143% { transform: translateY(-264px); }
+    97.7226% { transform: translateY(-264px); }
+    100.0000% { transform: translateY(-308px); }
+    }
+  </style>
+  <g id="reel">
+  <text x="450" y="22.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>shipped a 48-operation Pinecone integration into Corsair  <tspan class="sha">f7820d6</tspan></text>
+  <text x="450" y="66.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>merged a file-descriptor leak fix into NumPy  <tspan class="sha">444afc2</tspan></text>
+  <text x="450" y="110.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>patched Windows path parsing in Google&apos;s Agent Development Kit  <tspan class="sha">6f6106f</tspan></text>
+  <text x="450" y="154.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>fixed the license-compliance audit in Apache Magpie  <tspan class="sha">99c983b</tspan></text>
+  <text x="450" y="198.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>closed a CLI dry-run hole in Cognee  <tspan class="sha">2de7ab0</tspan></text>
+  <text x="450" y="242.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>built a Go job queue that survives kill -9 with zero job loss  <tspan class="sha">conveyor</tspan></text>
+  <text x="450" y="286.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>wrote a ReDoS analyzer that proves each finding with an attack string  <tspan class="sha">redoscope</tspan></text>
+  <text x="450" y="330.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>shipped a 48-operation Pinecone integration into Corsair  <tspan class="sha">f7820d6</tspan></text>
+  </g>
+</svg>
