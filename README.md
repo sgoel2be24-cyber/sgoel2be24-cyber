@@ -6,6 +6,10 @@
 
 <sub>Open to software engineering internships · Summer 2027</sub>
 
+<a href="https://github.com/sgoel2be24-cyber?tab=repositories">
+  <img src="https://raw.githubusercontent.com/sgoel2be24-cyber/sgoel2be24-cyber/main/assets/upstream.svg" alt="shipped a 48-operation Pinecone integration into Corsair · merged a file-descriptor leak fix into NumPy · patched Windows path parsing in Google&apos;s Agent Development Kit · fixed the license-compliance audit in Apache Magpie · closed a CLI dry-run hole in Cognee · built a Go job queue that survives kill -9 with zero job loss · wrote a ReDoS analyzer that proves each finding with an attack string" width="900" />
+</a>
+
 <br/>
 
 <a href="https://portfolio-website-zeta-dun-27.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-20232A?style=for-the-badge&logo=vercel&logoColor=white" /></a>
@@ -13,16 +17,6 @@
 <a href="mailto:shikhardeepgoel@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 </div>
-
-```text
-# my code, in other people's repositories
-
-f7820d6  corsairdev/corsair  +3,948  pinecone integration, 48 operations
-444afc2  numpy/numpy            +28  file-descriptor leak on the error path
-99c983b  apache/magpie          +93  license audit: large blobs, canonical SPDX
-6f6106f  google/adk-python      +76  windows path parsing in `adk eval`
-2de7ab0  topoteretes/cognee     +28  cli dry-run guard in API dispatch
-```
 
 ---
 
