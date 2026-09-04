@@ -27,7 +27,7 @@
 | **Education** | B.E. Computer Engineering — Thapar Institute of Engineering &amp; Technology, 2024–2028 |
 | **Based in** | India |
 | **Works on** | Durable backend systems · static analysis · native macOS · agent and evaluation tooling |
-| **Currently** | Contributing Kotlin/JVM plugin-runtime fixes to [BossConsole](https://github.com/risa-labs-inc/BossConsole/pulls?q=is%3Apr+author%3Asgoel2be24-cyber) and building uncertainty-aware fraud-model auditing in **BlindSpot** |
+| **Currently** | Building uncertainty-aware fraud-model auditing in **BlindSpot** and extending the native macOS agent monitor **AgentBar** |
 | **Reach me** | [Portfolio](https://portfolio-website-zeta-dun-27.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/shikhar-goel01/) · [shikhardeepgoel@gmail.com](mailto:shikhardeepgoel@gmail.com) |
 
 I build durable backend systems and developer tooling — crash-safe storage, fault-tolerant
@@ -38,7 +38,7 @@ evaluation work runs on the same stack: deterministic checks around probabilisti
 
 ## Open source
 
-Selected upstream work. Every row links to the merge, landing commit or live review.
+Selected work merged or landed upstream. Every row links to the merge or landing commit.
 
 | Project | Change | What it did |
 |---|---|---|
@@ -47,15 +47,6 @@ Selected upstream work. Every row links to the merge, landing commit or live rev
 | **[apache/magpie](https://github.com/apache/magpie)** | [#1089](https://github.com/apache/magpie/pull/1089) ✅ **merged** | `fix(license-compliance-audit): handle large blobs and canonical SPDX` — files over ~1 MiB return without inline content, so the audit silently mis-flagged them as non-compliant. Fetches via raw-media API, separates *uninspected* from *violating*. Closed issue #944. |
 | **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | [#4126](https://github.com/topoteretes/cognee/pull/4126) ✅ **merged** | `fix(cli): reject dry runs in API dispatch mode` — `--dry-run` was silently ignored when `--api-url` was set, executing real remote operations. |
 | **[corsairdev/corsair](https://github.com/corsairdev/corsair)** | [#1200](https://github.com/corsairdev/corsair/pull/1200) ✅ **merged** | `feat(pinecone): production-grade integration` — 48 operations across four API surfaces, typed Zod schemas, dynamic host routing. Landed as [`f7820d6`](https://github.com/corsairdev/corsair/commit/f7820d67e0e9ceb323a08e2d98fa112fa124053b), +3,948 across 26 files, closing issue #1199. |
-| **[BerriAI/LiteLLM](https://github.com/BerriAI/litellm)** | [#37115](https://github.com/BerriAI/litellm/pull/37115) 🔄 **in review** | `fix(responses): support dict input item and validate non-iterable input types` — adds dictionary and tuple support at the Responses API boundary, rejects invalid shapes cleanly, and keeps structured input inside the guardrail path. 173 focused tests pass; the current GitHub check suite is green. |
-| **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | [#4161](https://github.com/topoteretes/cognee/pull/4161) 🔄 in review | `fix(api): scope configuration lookup to authenticated owner` — any authenticated user could read any config by UUID. |
-
-Currently in review: two independently tested **BossConsole** plugin-runtime fixes
-([#324](https://github.com/risa-labs-inc/BossConsole/pull/324),
-[#325](https://github.com/risa-labs-inc/BossConsole/pull/325)), plus work in **Apache Airflow**,
-**pandas**, **Buzz**, **Microsoft Agent Framework** and **ADK** —
-[see every open PR](https://github.com/search?q=author%3Asgoel2be24-cyber+is%3Apr+is%3Aopen+-user%3Asgoel2be24-cyber&type=pullrequests).
-
 ---
 
 ## Systems &amp; software
