@@ -27,18 +27,18 @@
 | **Education** | B.E. Computer Engineering — Thapar Institute of Engineering &amp; Technology, 2024–2028 |
 | **Based in** | India |
 | **Works on** | Durable backend systems · static analysis · native macOS · agent and evaluation tooling |
-| **Currently** | Hardening [conveyor-job-queue](https://github.com/sgoel2be24-cyber/conveyor-job-queue) and packaging [redoscope](https://github.com/sgoel2be24-cyber/redoscope) for release |
+| **Currently** | Contributing Kotlin/JVM plugin-runtime fixes to [BossConsole](https://github.com/risa-labs-inc/BossConsole/pulls?q=is%3Apr+author%3Asgoel2be24-cyber) and building uncertainty-aware fraud-model auditing in **BlindSpot** |
 | **Reach me** | [Portfolio](https://portfolio-website-zeta-dun-27.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/shikhar-goel01/) · [shikhardeepgoel@gmail.com](mailto:shikhardeepgoel@gmail.com) |
 
 I build durable backend systems and developer tooling — crash-safe storage, fault-tolerant
 dispatch, and analyzers that produce a working exploit rather than a warning. The agent and
-evaluation work runs on the same stack.
+evaluation work runs on the same stack: deterministic checks around probabilistic models.
 
 ---
 
 ## Open source
 
-Patches landed in projects I use. Every row links to the merge or the landing commit.
+Selected upstream work. Every row links to the merge, landing commit or live review.
 
 | Project | Change | What it did |
 |---|---|---|
@@ -49,8 +49,10 @@ Patches landed in projects I use. Every row links to the merge or the landing co
 | **[corsairdev/corsair](https://github.com/corsairdev/corsair)** | [#1200](https://github.com/corsairdev/corsair/pull/1200) ✅ **merged** | `feat(pinecone): production-grade integration` — 48 operations across four API surfaces, typed Zod schemas, dynamic host routing. Landed as [`f7820d6`](https://github.com/corsairdev/corsair/commit/f7820d67e0e9ceb323a08e2d98fa112fa124053b), +3,948 across 26 files, closing issue #1199. |
 | **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | [#4161](https://github.com/topoteretes/cognee/pull/4161) 🔄 in review | `fix(api): scope configuration lookup to authenticated owner` — any authenticated user could read any config by UUID. |
 
-Further review threads open in **Apache Airflow**, **pandas**, **LiteLLM**, **Buzz**,
-**Microsoft Agent Framework** and **ADK** —
+Currently in review: two independently tested **BossConsole** plugin-runtime fixes
+([#324](https://github.com/risa-labs-inc/BossConsole/pull/324),
+[#325](https://github.com/risa-labs-inc/BossConsole/pull/325)), plus work in **Apache Airflow**,
+**pandas**, **LiteLLM**, **Buzz**, **Microsoft Agent Framework** and **ADK** —
 [see every open PR](https://github.com/search?q=author%3Asgoel2be24-cyber+is%3Apr+is%3Aopen+-user%3Asgoel2be24-cyber&type=pullrequests).
 
 ---
@@ -90,6 +92,8 @@ retry budget, so a poison-pill job cannot loop forever without reaching the dead
 
 | Project | What it is |
 |---|---|
+| **BlindSpot** — *private repo*<br/>`Python` `scikit-learn` `Streamlit` `pytest` | Uncertainty-aware auditor for fraud-model declines under censored outcomes. Freezes a verification policy before outcomes are revealed, estimates false-decline rates with known sampling propensities, and reports when the review budget is too small to support a stable claim. Replayed a 590,540-row IEEE-CIS benchmark byte-for-byte; 40 tests keep sealed labels out of the product path. |
+| **[WebMCP Incident Workspace](https://github.com/sgoel2be24-cyber/webmcp-incident-workspace)**<br/>`WebMCP` `JavaScript` `Vercel` · [live demo](https://webmcp-incident-workspace.vercel.app) | Human-agent incident command room with nine browser-native tools. Agents can compare deterministic remediation futures, but stale plans are rejected and irreversible actions remain human-only; successful execution emits a retrievable decision receipt. Verified through seven real-client scenarios and 18 automated tests. |
 | **[modelgauntlet](https://github.com/sgoel2be24-cyber/modelgauntlet)**<br/>`Next.js` `Zod` `Ajv` `Vitest` | Pre-release testing platform that stress-tests structured AI tasks across open-source models and returns a deterministic **SHIP / FIX / BLOCK** verdict. One rule enforced end to end: AI proposes, deterministic TypeScript code decides — AI never grades AI. 23 automated tests across parsing, assertion, schema-validation and verdict boundaries. |
 | **[multimodal-evidence-review](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate)**<br/>`Python` `Gemini 2.5 Flash` | Multimodal damage-claim adjudication pipeline — model output validated and repaired against a strict 14-column schema with tightly constrained enums. Semantic consistency rules lifted **claim-status accuracy from 70% to 85%** with zero additional model calls. SHA-256 content-addressed caching, resumable batch pipeline, graceful stop on quota errors. **Ranked #37 of 1,773.** |
 | **[kaamtwin](https://github.com/sgoel2be24-cyber/kaamtwin)**<br/>`Next.js` `TypeScript` | Causal digital-twin simulator that reorders manufacturing order queues by deadline priority — 62 → 59 late deliveries in the demonstrated scenario, verified by **15 anti-hardcoding causal tests** (reversed-input, capacity, duration, immutable-hash) that rule out a hardcoded result. 67 automated tests at 88%+ coverage, 8/8 Chromium e2e, hardened CSP. |
@@ -122,6 +126,7 @@ Advanced Software Engineering · Deloitte Cyber · Google Ads Apps
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" />
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
 <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
@@ -131,6 +136,7 @@ Advanced Software Engineering · Deloitte Cyber · Google Ads Apps
 
 <p align="center">
 <img src="https://img.shields.io/badge/Model_Context_Protocol-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
+<img src="https://img.shields.io/badge/WebMCP-0B7285?style=for-the-badge&logo=googlechrome&logoColor=white" />
 <img src="https://img.shields.io/badge/Google_ADK-4285F4?style=for-the-badge&logo=google&logoColor=white" />
 <img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" />
 <img src="https://img.shields.io/badge/Ollama-20232A?style=for-the-badge&logo=ollama&logoColor=white" />
@@ -165,6 +171,7 @@ Advanced Software Engineering · Deloitte Cyber · Google Ads Apps
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+<img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" />
 <img src="https://img.shields.io/badge/Vercel-20232A?style=for-the-badge&logo=vercel&logoColor=white" />
 <img src="https://img.shields.io/badge/Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white" />
 </p>
@@ -178,6 +185,8 @@ Advanced Software Engineering · Deloitte Cyber · Google Ads Apps
 <img src="https://img.shields.io/badge/Next.js-20232A?style=for-the-badge&logo=nextdotjs&logoColor=white" />
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
 <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
 <img src="https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white" />
 <img src="https://img.shields.io/badge/Express-20232A?style=for-the-badge&logo=express&logoColor=white" />
 </p>
@@ -186,12 +195,13 @@ Advanced Software Engineering · Deloitte Cyber · Google Ads Apps
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
 <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
 <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+<img src="https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white" />
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white" />
 <img src="https://img.shields.io/badge/IndexedDB-4B5563?style=for-the-badge" />
 </p>
 
-**Core CS:** data structures &amp; algorithms · DBMS · object-oriented programming · distributed systems · software testing (pytest, Vitest, Ruff)
+**Core CS:** data structures &amp; algorithms · DBMS · object-oriented programming · distributed systems · software testing (pytest, Vitest, Playwright, Ruff)
 
 ---
 
