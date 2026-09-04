@@ -47,12 +47,13 @@ Selected upstream work. Every row links to the merge, landing commit or live rev
 | **[apache/magpie](https://github.com/apache/magpie)** | [#1089](https://github.com/apache/magpie/pull/1089) ✅ **merged** | `fix(license-compliance-audit): handle large blobs and canonical SPDX` — files over ~1 MiB return without inline content, so the audit silently mis-flagged them as non-compliant. Fetches via raw-media API, separates *uninspected* from *violating*. Closed issue #944. |
 | **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | [#4126](https://github.com/topoteretes/cognee/pull/4126) ✅ **merged** | `fix(cli): reject dry runs in API dispatch mode` — `--dry-run` was silently ignored when `--api-url` was set, executing real remote operations. |
 | **[corsairdev/corsair](https://github.com/corsairdev/corsair)** | [#1200](https://github.com/corsairdev/corsair/pull/1200) ✅ **merged** | `feat(pinecone): production-grade integration` — 48 operations across four API surfaces, typed Zod schemas, dynamic host routing. Landed as [`f7820d6`](https://github.com/corsairdev/corsair/commit/f7820d67e0e9ceb323a08e2d98fa112fa124053b), +3,948 across 26 files, closing issue #1199. |
+| **[BerriAI/LiteLLM](https://github.com/BerriAI/litellm)** | [#37115](https://github.com/BerriAI/litellm/pull/37115) 🔄 **in review** | `fix(responses): support dict input item and validate non-iterable input types` — adds dictionary and tuple support at the Responses API boundary, rejects invalid shapes cleanly, and keeps structured input inside the guardrail path. 173 focused tests pass; the current GitHub check suite is green. |
 | **[topoteretes/cognee](https://github.com/topoteretes/cognee)** | [#4161](https://github.com/topoteretes/cognee/pull/4161) 🔄 in review | `fix(api): scope configuration lookup to authenticated owner` — any authenticated user could read any config by UUID. |
 
 Currently in review: two independently tested **BossConsole** plugin-runtime fixes
 ([#324](https://github.com/risa-labs-inc/BossConsole/pull/324),
 [#325](https://github.com/risa-labs-inc/BossConsole/pull/325)), plus work in **Apache Airflow**,
-**pandas**, **LiteLLM**, **Buzz**, **Microsoft Agent Framework** and **ADK** —
+**pandas**, **Buzz**, **Microsoft Agent Framework** and **ADK** —
 [see every open PR](https://github.com/search?q=author%3Asgoel2be24-cyber+is%3Apr+is%3Aopen+-user%3Asgoel2be24-cyber&type=pullrequests).
 
 ---
@@ -65,7 +66,7 @@ Currently in review: two independently tested **BossConsole** plugin-runtime fix
 | **[redoscope](https://github.com/sgoel2be24-cyber/redoscope)**<br/>`TypeScript` `Node ≥22.18` `zero deps` | ReDoS static analysis that verifies its own findings. Parses the full ECMAScript regex grammar, compiles to [an NFA](https://github.com/sgoel2be24-cyber/redoscope/blob/main/src/nfa.ts) modelling real backtracking, detects exponential and polynomial paths via [product automata](https://github.com/sgoel2be24-cyber/redoscope/blob/main/src/analysis.ts), then [generates a witness attack string and times it](https://github.com/sgoel2be24-cyber/redoscope/blob/main/src/dynamic.ts) inside a killable child process. [Benchmarked](https://github.com/sgoel2be24-cyber/redoscope/blob/main/bench/compare.ts) on **627 real-world regexes**: a star-height heuristic gave 10 false positives and missed 14 real vulnerabilities; this pipeline hit **0 false positives and 0 misses**.<br/><br/>**The hard part:** "looks risky" is not a vulnerability. The tool has to produce a concrete string that actually hangs the engine, and prove it with a measured growth curve. |
 | **[rescuerelay](https://github.com/sgoel2be24-cyber/rescuerelay)**<br/>`Next.js 15` `TypeScript` `Leaflet` `Recharts` | Explainable crisis-resource coordination platform. Camps and clinics report needs, providers register available resources, and a deterministic matching engine ranks compatible pairings by priority, distance, availability and fairness — with a plain-language explanation attached to every recommendation. Offline-capable field intake for low-connectivity reporting. |
 | **LiveEnv** — *private repo*<br/>`Next.js` `SQLite` `WebSocket` `IndexedDB` `MapLibre` | Local-first, decay-based geospatial social platform across four surfaces. Geohash-partitioned SQLite serving a hot TTL-swept table alongside durable transactional tables; paid placements settled through an append-only double-entry ledger so money never moves without minting the pin; IndexedDB offline outbox with idempotent client-ID-keyed sync. |
-| **AgentBar** — *private repo*<br/>`Swift` `Xcode` `Keychain` `SQLite` | Native macOS menu bar app unifying usage tracking across six AI coding agents into one stacked bar with per-service metrics. Secure credential handling through macOS Keychain across heterogeneous sources; shipped as a signed `.dmg` under MIT. |
+| **AgentBar** — *private repo*<br/>`Swift` `Xcode` `Keychain` `SQLite` | Native macOS menu bar app unifying usage tracking across Codex, Claude Code, Gemini, Cursor, OpenCode and Z.ai into one stacked bar with per-service metrics. Secure credential handling through macOS Keychain across heterogeneous sources; shipped as a signed `.dmg` under MIT. |
 
 ### How Conveyor survives a `kill -9`
 
@@ -97,7 +98,7 @@ retry budget, so a poison-pill job cannot loop forever without reaching the dead
 | **[modelgauntlet](https://github.com/sgoel2be24-cyber/modelgauntlet)**<br/>`Next.js` `Zod` `Ajv` `Vitest` | Pre-release testing platform that stress-tests structured AI tasks across open-source models and returns a deterministic **SHIP / FIX / BLOCK** verdict. One rule enforced end to end: AI proposes, deterministic TypeScript code decides — AI never grades AI. 23 automated tests across parsing, assertion, schema-validation and verdict boundaries. |
 | **[multimodal-evidence-review](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate)**<br/>`Python` `Gemini 2.5 Flash` | Multimodal damage-claim adjudication pipeline — model output validated and repaired against a strict 14-column schema with tightly constrained enums. Semantic consistency rules lifted **claim-status accuracy from 70% to 85%** with zero additional model calls. SHA-256 content-addressed caching, resumable batch pipeline, graceful stop on quota errors. **Ranked #37 of 1,773.** |
 | **[kaamtwin](https://github.com/sgoel2be24-cyber/kaamtwin)**<br/>`Next.js` `TypeScript` | Causal digital-twin simulator that reorders manufacturing order queues by deadline priority — 62 → 59 late deliveries in the demonstrated scenario, verified by **15 anti-hardcoding causal tests** (reversed-input, capacity, duration, immutable-hash) that rule out a hardcoded result. 67 automated tests at 88%+ coverage, 8/8 Chromium e2e, hardened CSP. |
-| **[zero-token-router](https://github.com/sgoel2be24-cyber/zero-token-router)**<br/>`Python` | Hybrid router resolving deterministic tasks locally and escalating only genuinely hard work to LLMs. Passed **19/19 simulated evaluations** shipped as a public Linux/amd64 image under 4 GB RAM / 2 vCPU. |
+| **[zero-token-router](https://github.com/sgoel2be24-cyber/zero-token-router)**<br/>`Python` `Fireworks AI API` | Hybrid router resolving deterministic tasks locally and escalating only genuinely hard work to Fireworks-hosted models. Passed **19/19 simulated evaluations** shipped as a public Linux/amd64 image under 4 GB RAM / 2 vCPU. |
 
 ---
 
@@ -134,12 +135,24 @@ Advanced Software Engineering · Deloitte Cyber · Google Ads Apps
 
 **AI &amp; agents** — *where most of my work sits*
 
+**Agent runtimes &amp; interfaces**
+
+<p align="center">
+<img src="https://img.shields.io/badge/OpenAI_Codex-20232A?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
+<img src="https://img.shields.io/badge/OpenCode-009EB5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" />
+<img src="https://img.shields.io/badge/Ollama-20232A?style=for-the-badge&logo=ollama&logoColor=white" />
+</p>
+
+**Protocols, platforms &amp; orchestration**
+
 <p align="center">
 <img src="https://img.shields.io/badge/Model_Context_Protocol-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
 <img src="https://img.shields.io/badge/WebMCP-0B7285?style=for-the-badge&logo=googlechrome&logoColor=white" />
 <img src="https://img.shields.io/badge/Google_ADK-4285F4?style=for-the-badge&logo=google&logoColor=white" />
-<img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" />
-<img src="https://img.shields.io/badge/Ollama-20232A?style=for-the-badge&logo=ollama&logoColor=white" />
+<img src="https://img.shields.io/badge/LiteLLM-2E86C1?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Fireworks_AI-6C47FF?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Cognee-2B3137?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Featherless-5B4B8A?style=for-the-badge" />
 </p>
