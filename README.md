@@ -4,7 +4,6 @@
 
 **Software Engineer** · distributed systems, static analysis, native apps — and the AI layer on top
 
-<sub>Open to software engineering internships · Summer 2027</sub>
 
 <a href="https://github.com/sgoel2be24-cyber?tab=repositories">
   <img src="https://raw.githubusercontent.com/sgoel2be24-cyber/sgoel2be24-cyber/main/assets/upstream.svg" alt="shipped a 48-operation Pinecone integration into Corsair · merged a file-descriptor leak fix into NumPy · patched Windows path parsing in Google&apos;s Agent Development Kit · fixed the license-compliance audit in Apache Magpie · closed a CLI dry-run hole in Cognee · built a Go job queue that survives kill -9 with zero job loss · wrote a ReDoS analyzer that proves each finding with an attack string" width="900" />
