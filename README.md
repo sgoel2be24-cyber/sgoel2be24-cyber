@@ -51,9 +51,9 @@ evaluation work runs on the same stack: deterministic checks around probabilisti
 |---|---|
 | 🥇 **#1 on the live leaderboard** | **Open Source Connect India '26**: 240+ merged pull requests across six projects. [Leaderboard](https://osci.osconnect.org/leaderboard) |
 | 🏆 **Special Award Winner** and finalist | **HackBlox 2026**, open-source hackathon by Hackers Cult, judged on best project. Built [Pact](https://github.com/sgoel2be24-cyber/pact) |
-| 🏅 **Finalist** | **DataForge 2026, IIT Kharagpur**: [Synapse Memory Lab](https://github.com/ISHPREET0101/synapse-memory-lab-dataforge-2026), with Ishpreet Singh |
-| **#37 of 1,773**, top 2% | **HackerRank Orchestrate, June 2026**: 22,000+ registered. [multimodal-evidence-review](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate) |
-| **Top 7%** of 1,982 ranked | **HackerRank Orchestrate, August 2026**: global 24-hour AI-agent hackathon |
+| 🏅 **Finalist** | **DataForge 2026, IIT Kharagpur**: [Synapse Memory Lab](https://github.com/sgoel2be24-cyber/synapse-memory-lab-dataforge-2026-final) |
+| **#37 of 15,000+**, top 0.25% | **HackerRank Orchestrate, June 2026**: 15,000+ registered. [multimodal-evidence-review](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate) |
+| **#142 of 22,000+**, top 0.7% | **HackerRank Orchestrate, August 2026**: 22,000+ registered for the global 24-hour AI-agent hackathon |
 
 ---
 
@@ -293,13 +293,13 @@ Pre-release testing platform that stress-tests structured AI tasks across open-s
 </details>
 
 <details>
-<summary><b>multimodal-evidence-review</b>: claim accuracy lifted from 70% to 85%, ranked #37 of 1,773 at HackerRank Orchestrate</summary>
+<summary><b>multimodal-evidence-review</b>: claim accuracy lifted from 70% to 85%, ranked #37 of 15,000+ at HackerRank Orchestrate</summary>
 
 <br/>
 
 [Repo](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate) · `Python` `Gemini 2.5 Flash`
 
-Multimodal damage-claim adjudication pipeline — model output validated and repaired against a strict 14-column schema with tightly constrained enums. Semantic consistency rules lifted claim-status accuracy with zero additional model calls. SHA-256 content-addressed caching, resumable batch pipeline, graceful stop on quota errors. **Ranked #37 of 1,773** at HackerRank Orchestrate, June 2026, from 22,000+ registrants.
+Multimodal damage-claim adjudication pipeline — model output validated and repaired against a strict 14-column schema with tightly constrained enums. Semantic consistency rules lifted claim-status accuracy with zero additional model calls. SHA-256 content-addressed caching, resumable batch pipeline, graceful stop on quota errors. **Ranked #37 of 15,000+ registrants** at HackerRank Orchestrate, June 2026.
 
 </details>
 
@@ -308,7 +308,7 @@ Multimodal damage-claim adjudication pipeline — model output validated and rep
 
 <br/>
 
-[Repo](https://github.com/ISHPREET0101/synapse-memory-lab-dataforge-2026) · [Live](https://ishpreet0101.github.io/synapse-memory-lab-dataforge-2026/) · with Ishpreet Singh · `TypeScript` `Canvas`
+[Repo](https://github.com/sgoel2be24-cyber/synapse-memory-lab-dataforge-2026-final) · [Live](https://ishpreet0101.github.io/synapse-memory-lab-dataforge-2026/) · `TypeScript` `Canvas`
 
 Three live labs show causal linear attention computed as Hebbian outer-product writes into a fixed-shape synaptic state, check that recurrent form numerically against an explicit-history oracle, and push an associative memory past capacity so interference becomes visible.
 
