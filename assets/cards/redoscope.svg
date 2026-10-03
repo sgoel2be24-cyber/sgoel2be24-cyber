@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="252" viewBox="0 0 440 252" role="img" aria-label="redoscope: a witness attack string grows one character at a time while the regex match time grows exponentially, and the blow-up is verified">
+  <title>redoscope: a witness attack string grows one character at a time while the regex match time grows exponentially, and the blow-up is verified</title>
+  <style>
+    svg {
+      --bg:#f6f8fa; --bd:#d0d7de; --fg:#1f2328; --mu:#59636e; --gd:#d8dee4;
+      --bl:#0969da; --gr:#1a7f37; --rd:#cf222e; --am:#bf8700; --amt:#9a6700;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --bg:#161b22; --bd:#30363d; --fg:#e6edf3; --mu:#8b949e; --gd:#262c36;
+        --bl:#4493f8; --gr:#3fb950; --rd:#f85149; --am:#d29922; --amt:#d29922;
+      }
+    }
+    .bg { fill:var(--bg); stroke:var(--bd); }
+    .t  { font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Helvetica, Arial, sans-serif; font-size:19px; font-weight:600; fill:var(--fg); }
+    .st { font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Helvetica, Arial, sans-serif; font-size:13px; fill:var(--mu); }
+    .m  { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--mu); }
+    .mf { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--fg); }
+    .ft { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11.5px; fill:var(--fg); }
+    .lg { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--mu); text-anchor:end; }
+    .ax { stroke:var(--gd); stroke-width:1; }
+    .fbl { fill:var(--bl); } .fgr { fill:var(--gr); } .frd { fill:var(--rd); } .fam { fill:var(--am); }
+    .tbl { fill:var(--bl); } .tgr { fill:var(--gr); } .trd { fill:var(--rd); } .tam { fill:var(--amt); }
+    .sbl { stroke:var(--bl); } .sgr { stroke:var(--gr); } .srd { stroke:var(--rd); } .sam { stroke:var(--am); }
+    .smu { stroke:var(--mu); }
+    .anim { animation-duration:12.0s; animation-iteration-count:infinite; animation-delay:-9s; }
+    .sweep { transform-box:fill-box; transform-origin:0 50%; animation-name:sweep; animation-timing-function:linear; }
+    .ph    { opacity:0; animation-name:ph; animation-timing-function:linear; }
+    .trace { animation-name:fade; }
+    .late  { animation-name:late; }
+    @keyframes sweep { 0% { transform:scaleX(0); } 46.0% { transform:scaleX(1); } 100% { transform:scaleX(1); } }
+    @keyframes ph {
+      0% { transform:translateX(0); opacity:1; }
+      46.0% { transform:translateX(354px); opacity:1; }
+      49.0% { transform:translateX(354px); opacity:0; }
+      100% { transform:translateX(354px); opacity:0; }
+    }
+    @keyframes fade { 0% { opacity:1; } 94.0% { opacity:1; } 97.5% { opacity:0; } 100% { opacity:0; } }
+    @keyframes late { 0% { opacity:0; } 46.0% { opacity:0; } 48.0% { opacity:1; } 100% { opacity:1; } }
+    
+    @media (prefers-reduced-motion: reduce) { .anim { animation:none; } }
+  </style>
+  <defs>
+    <clipPath id="reveal-redoscope"><rect class="sweep anim" x="62" y="66" width="356" height="148"/></clipPath>
+  </defs>
+  <rect class="bg" x="0.5" y="0.5" width="439" height="251" rx="10"/>
+  <text class="t" x="24" y="34">redoscope</text>
+  <text class="m" x="416" y="33" text-anchor="end">TypeScript</text>
+  <text class="st" x="24" y="55">Finds ReDoS and proves each hit with a real attack</text>
+  <text class="mf" x="76" y="108" font-size="12.5px">/^(a+)+$/</text>
+  <line class="ax" x1="64" y1="186" x2="416" y2="186"/>
+  <line class="ax" x1="64" y1="186" x2="64" y2="90"/>
+  <text class="m" x="58" y="98" text-anchor="end">time</text>
+  <text class="m" x="58" y="205" text-anchor="end">input</text>
+  <g class="trace anim">
+    <g clip-path="url(#reveal-redoscope)">
+      <polyline points="76.0,183.0 100.8,182.7 125.5,182.3 150.3,181.7 175.1,180.8 199.8,179.4 224.6,177.5 249.4,174.6 274.2,170.4 298.9,164.2 323.7,155.1 348.5,141.7 373.2,122.0 398.0,93.0" fill="none" class="sbl" stroke-width="1.5" stroke-opacity="0.55"/><circle class="fbl" cx="76.0" cy="183.0" r="2.8"/><circle class="fbl" cx="100.8" cy="182.7" r="2.8"/><circle class="fbl" cx="125.5" cy="182.3" r="2.8"/><circle class="fbl" cx="150.3" cy="181.7" r="2.8"/><circle class="fbl" cx="175.1" cy="180.8" r="2.8"/><circle class="fbl" cx="199.8" cy="179.4" r="2.8"/><circle class="fbl" cx="224.6" cy="177.5" r="2.8"/><circle class="fbl" cx="249.4" cy="174.6" r="2.8"/><circle class="fbl" cx="274.2" cy="170.4" r="2.8"/><circle class="fbl" cx="298.9" cy="164.2" r="2.8"/><circle class="fbl" cx="323.7" cy="155.1" r="2.8"/><circle class="fbl" cx="348.5" cy="141.7" r="2.8"/><circle class="fbl" cx="373.2" cy="122.0" r="2.8"/><circle class="fbl" cx="398.0" cy="93.0" r="2.8"/><text class="mf" x="76.0" y="205" text-anchor="middle">a</text><text class="mf" x="100.8" y="205" text-anchor="middle">a</text><text class="mf" x="125.5" y="205" text-anchor="middle">a</text><text class="mf" x="150.3" y="205" text-anchor="middle">a</text><text class="mf" x="175.1" y="205" text-anchor="middle">a</text><text class="mf" x="199.8" y="205" text-anchor="middle">a</text><text class="mf" x="224.6" y="205" text-anchor="middle">a</text><text class="mf" x="249.4" y="205" text-anchor="middle">a</text><text class="mf" x="274.2" y="205" text-anchor="middle">a</text><text class="mf" x="298.9" y="205" text-anchor="middle">a</text><text class="mf" x="323.7" y="205" text-anchor="middle">a</text><text class="mf" x="348.5" y="205" text-anchor="middle">a</text><text class="mf" x="373.2" y="205" text-anchor="middle">a</text><text class="mf" x="398.0" y="205" text-anchor="middle">a</text><text class="mf trd" x="411.0" y="205" text-anchor="middle" font-weight="700">!</text>
+    </g>
+    <g class="late anim">
+      <path class="sgr" d="M248.0 93 l4 4 l8 -9" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="mf tgr" x="264.0" y="97">blow-up verified</text>
+    </g>
+  </g>
+  <line class="ph anim" x1="64" y1="74" x2="64" y2="204" stroke="var(--fg)" stroke-width="1.25" stroke-opacity="0.55"/>
+  <text class="ft" x="24" y="234">0 false positives, 0 misses on 627 real regexes</text>
+</svg>

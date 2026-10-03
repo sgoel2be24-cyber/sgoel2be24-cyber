@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="252" viewBox="0 0 440 252" role="img" aria-label="teachable voice: you say a command and demonstrate it once; later a new spoken value is replayed automatically through the same taps, stopping at the payment screen">
+  <title>teachable voice: you say a command and demonstrate it once; later a new spoken value is replayed automatically through the same taps, stopping at the payment screen</title>
+  <style>
+    svg {
+      --bg:#f6f8fa; --bd:#d0d7de; --fg:#1f2328; --mu:#59636e; --gd:#d8dee4;
+      --bl:#0969da; --gr:#1a7f37; --rd:#cf222e; --am:#bf8700; --amt:#9a6700;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --bg:#161b22; --bd:#30363d; --fg:#e6edf3; --mu:#8b949e; --gd:#262c36;
+        --bl:#4493f8; --gr:#3fb950; --rd:#f85149; --am:#d29922; --amt:#d29922;
+      }
+    }
+    .bg { fill:var(--bg); stroke:var(--bd); }
+    .t  { font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Helvetica, Arial, sans-serif; font-size:19px; font-weight:600; fill:var(--fg); }
+    .st { font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Helvetica, Arial, sans-serif; font-size:13px; fill:var(--mu); }
+    .m  { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--mu); }
+    .mf { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--fg); }
+    .ft { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11.5px; fill:var(--fg); }
+    .lg { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--mu); text-anchor:end; }
+    .ax { stroke:var(--gd); stroke-width:1; }
+    .fbl { fill:var(--bl); } .fgr { fill:var(--gr); } .frd { fill:var(--rd); } .fam { fill:var(--am); }
+    .tbl { fill:var(--bl); } .tgr { fill:var(--gr); } .trd { fill:var(--rd); } .tam { fill:var(--amt); }
+    .sbl { stroke:var(--bl); } .sgr { stroke:var(--gr); } .srd { stroke:var(--rd); } .sam { stroke:var(--am); }
+    .smu { stroke:var(--mu); }
+    .anim { animation-duration:12.0s; animation-iteration-count:infinite; animation-delay:-3s; }
+    .sweep { transform-box:fill-box; transform-origin:0 50%; animation-name:sweep; animation-timing-function:linear; }
+    .ph    { opacity:0; animation-name:ph; animation-timing-function:linear; }
+    .trace { animation-name:fade; }
+    .late  { animation-name:late; }
+    @keyframes sweep { 0% { transform:scaleX(0); } 46.0% { transform:scaleX(1); } 100% { transform:scaleX(1); } }
+    @keyframes ph {
+      0% { transform:translateX(0); opacity:1; }
+      46.0% { transform:translateX(320px); opacity:1; }
+      49.0% { transform:translateX(320px); opacity:0; }
+      100% { transform:translateX(320px); opacity:0; }
+    }
+    @keyframes fade { 0% { opacity:1; } 94.0% { opacity:1; } 97.5% { opacity:0; } 100% { opacity:0; } }
+    @keyframes late { 0% { opacity:0; } 46.0% { opacity:0; } 48.0% { opacity:1; } 100% { opacity:1; } }
+    
+    @media (prefers-reduced-motion: reduce) { .anim { animation:none; } }
+  </style>
+  <defs>
+    <clipPath id="reveal-teachable-voice"><rect class="sweep anim" x="102" y="70" width="322" height="144"/></clipPath>
+  </defs>
+  <rect class="bg" x="0.5" y="0.5" width="439" height="251" rx="10"/>
+  <text class="t" x="24" y="34">teachable voice</text>
+  <text class="m" x="416" y="33" text-anchor="end">Kotlin</text>
+  <text class="st" x="24" y="55">An Android assistant that learns a task from one demo</text>
+  <text class="lg" x="92" y="100">voice</text>
+  <text class="lg" x="92" y="138">taps</text>
+  <text class="lg" x="92" y="172">guard</text>
+  <line class="ax" x1="104" y1="134" x2="416" y2="134" stroke-dasharray="2 4"/>
+  <g class="trace anim">
+    <g clip-path="url(#reveal-teachable-voice)">
+      <rect x="104" y="86" width="135" height="20" rx="10" class="fbl" fill-opacity="0.14"/><text class="mf" x="112" y="100">order a Margherita</text><rect x="272" y="86" width="142" height="20" rx="10" class="fgr" fill-opacity="0.14"/><text class="mf" x="280" y="100">a Farmhouse instead</text><circle class="fbl" cx="150" cy="134" r="4.5"/><circle class="sbl" cx="150" cy="134" r="8" fill="none" stroke-opacity="0.45"/><circle class="fbl" cx="170" cy="134" r="4.5"/><circle class="sbl" cx="170" cy="134" r="8" fill="none" stroke-opacity="0.45"/><circle class="fbl" cx="190" cy="134" r="4.5"/><circle class="sbl" cx="190" cy="134" r="8" fill="none" stroke-opacity="0.45"/><circle class="fbl" cx="210" cy="134" r="4.5"/><circle class="sbl" cx="210" cy="134" r="8" fill="none" stroke-opacity="0.45"/><circle class="fbl" cx="230" cy="134" r="4.5"/><circle class="sbl" cx="230" cy="134" r="8" fill="none" stroke-opacity="0.45"/><circle class="fgr" cx="300" cy="134" r="4.5"/><circle class="fgr" cx="316" cy="134" r="4.5"/><circle class="fgr" cx="332" cy="134" r="4.5"/><circle class="fgr" cx="348" cy="134" r="4.5"/><circle class="fgr" cx="364" cy="134" r="4.5"/><line class="sgr" x1="104" y1="168" x2="380" y2="168" stroke-width="2" stroke-dasharray="1 5" stroke-linecap="round"/><rect class="fam" x="383" y="165" width="14" height="11" rx="2"/><path class="sam" d="M386 165 v-3 a4 4 0 0 1 8 0 v3" fill="none" stroke-width="1.8"/><text class="m tam" x="377" y="160" text-anchor="end">stops at payment</text><text class="m" x="104" y="200">taught once</text><text class="m" x="282" y="200">replayed by voice</text>
+    </g>
+  </g>
+  <line class="ph anim" x1="104" y1="78" x2="104" y2="204" stroke="var(--fg)" stroke-width="1.25" stroke-opacity="0.55"/>
+  <text class="ft" x="24" y="234">18/18 commands understood, 7/7 cross-app runs</text>
+</svg>

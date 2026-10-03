@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="252" viewBox="0 0 440 252" role="img" aria-label="forgegraph: a cold build runs all 11 tasks across three workers; after editing src/api.txt only the 4 affected tasks rerun and 7 come from cache">
+  <title>forgegraph: a cold build runs all 11 tasks across three workers; after editing src/api.txt only the 4 affected tasks rerun and 7 come from cache</title>
+  <style>
+    svg {
+      --bg:#f6f8fa; --bd:#d0d7de; --fg:#1f2328; --mu:#59636e; --gd:#d8dee4;
+      --bl:#0969da; --gr:#1a7f37; --rd:#cf222e; --am:#bf8700; --amt:#9a6700;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --bg:#161b22; --bd:#30363d; --fg:#e6edf3; --mu:#8b949e; --gd:#262c36;
+        --bl:#4493f8; --gr:#3fb950; --rd:#f85149; --am:#d29922; --amt:#d29922;
+      }
+    }
+    .bg { fill:var(--bg); stroke:var(--bd); }
+    .t  { font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Helvetica, Arial, sans-serif; font-size:19px; font-weight:600; fill:var(--fg); }
+    .st { font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Helvetica, Arial, sans-serif; font-size:13px; fill:var(--mu); }
+    .m  { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--mu); }
+    .mf { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--fg); }
+    .ft { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11.5px; fill:var(--fg); }
+    .lg { font-family:ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, monospace; font-size:11px; fill:var(--mu); text-anchor:end; }
+    .ax { stroke:var(--gd); stroke-width:1; }
+    .fbl { fill:var(--bl); } .fgr { fill:var(--gr); } .frd { fill:var(--rd); } .fam { fill:var(--am); }
+    .tbl { fill:var(--bl); } .tgr { fill:var(--gr); } .trd { fill:var(--rd); } .tam { fill:var(--amt); }
+    .sbl { stroke:var(--bl); } .sgr { stroke:var(--gr); } .srd { stroke:var(--rd); } .sam { stroke:var(--am); }
+    .smu { stroke:var(--mu); }
+    .anim { animation-duration:12.0s; animation-iteration-count:infinite; animation-delay:-6s; }
+    .sweep { transform-box:fill-box; transform-origin:0 50%; animation-name:sweep; animation-timing-function:linear; }
+    .ph    { opacity:0; animation-name:ph; animation-timing-function:linear; }
+    .trace { animation-name:fade; }
+    .late  { animation-name:late; }
+    @keyframes sweep { 0% { transform:scaleX(0); } 46.0% { transform:scaleX(1); } 100% { transform:scaleX(1); } }
+    @keyframes ph {
+      0% { transform:translateX(0); opacity:1; }
+      46.0% { transform:translateX(320px); opacity:1; }
+      49.0% { transform:translateX(320px); opacity:0; }
+      100% { transform:translateX(320px); opacity:0; }
+    }
+    @keyframes fade { 0% { opacity:1; } 94.0% { opacity:1; } 97.5% { opacity:0; } 100% { opacity:0; } }
+    @keyframes late { 0% { opacity:0; } 46.0% { opacity:0; } 48.0% { opacity:1; } 100% { opacity:1; } }
+    
+    @media (prefers-reduced-motion: reduce) { .anim { animation:none; } }
+  </style>
+  <defs>
+    <clipPath id="reveal-forgegraph"><rect class="sweep anim" x="102" y="70" width="322" height="134"/></clipPath>
+  </defs>
+  <rect class="bg" x="0.5" y="0.5" width="439" height="251" rx="10"/>
+  <text class="t" x="24" y="34">forgegraph</text>
+  <text class="m" x="416" y="33" text-anchor="end">Go</text>
+  <text class="st" x="24" y="55">A build engine that reruns only what an edit touched</text>
+  <text class="lg" x="92" y="114">workers</text>
+  <text class="lg" x="92" y="164">cache</text>
+  <line class="ax" x1="104" y1="182" x2="416" y2="182"/>
+  <g class="trace anim">
+    <g clip-path="url(#reveal-forgegraph)">
+      <rect class="fbl" x="104.0" y="104" width="27.1" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="132.6" y="104" width="34.9" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="132.6" y="122" width="32.3" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="169.0" y="104" width="21.9" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="166.4" y="122" width="20.6" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="104.0" y="122" width="14.1" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="119.6" y="86" width="37.5" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="158.6" y="86" width="18.0" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="192.4" y="86" width="29.7" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="104.0" y="86" width="10.2" height="12" rx="2" fill-opacity="0.9"/><rect class="fbl" x="223.6" y="86" width="24.5" height="12" rx="2" fill-opacity="0.9"/><text class="m" x="104" y="164">cold</text><text class="m" x="104" y="198">first build</text><line class="sam" x1="278" y1="80" x2="278" y2="172" stroke-width="1.25" stroke-dasharray="3 3"/><text class="m tam" x="284" y="82">edit src/api.txt</text><rect class="fam" x="290.0" y="86" width="34.9" height="12" rx="2"/><rect class="fam" x="326.4" y="86" width="21.9" height="12" rx="2"/><rect class="fam" x="349.8" y="86" width="29.7" height="12" rx="2"/><rect class="fam" x="381.0" y="86" width="24.5" height="12" rx="2"/><circle class="fgr" cx="294" cy="160" r="2.8"/><circle class="fgr" cx="302" cy="160" r="2.8"/><circle class="fgr" cx="310" cy="160" r="2.8"/><circle class="fgr" cx="318" cy="160" r="2.8"/><circle class="fgr" cx="326" cy="160" r="2.8"/><circle class="fgr" cx="334" cy="160" r="2.8"/><circle class="fgr" cx="342" cy="160" r="2.8"/><text class="m tgr" x="352" y="164">7 hits</text><text class="m" x="290" y="198">after one edit</text>
+    </g>
+  </g>
+  <line class="ph anim" x1="104" y1="78" x2="104" y2="194" stroke="var(--fg)" stroke-width="1.25" stroke-opacity="0.55"/>
+  <text class="ft" x="24" y="234">warm rebuild 1 ms; one edit reruns 4 of 11 tasks</text>
+</svg>
