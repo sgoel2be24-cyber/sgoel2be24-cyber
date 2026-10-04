@@ -57,7 +57,7 @@
   <text x="450" y="154.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>finished in the top 1% at three HackerRank Orchestrate editions  <tspan class="sha">orchestrate</tspan></text>
   <text x="450" y="198.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>shipped a 48-operation Pinecone integration into Corsair  <tspan class="sha">f7820d6</tspan></text>
   <text x="450" y="242.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>merged a file-descriptor leak fix into NumPy  <tspan class="sha">444afc2</tspan></text>
-  <text x="450" y="286.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>patched Windows path parsing in Google&apos;s Agent Development Kit  <tspan class="sha">6f6106f</tspan></text>
+  <text x="450" y="286.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>landed two changes in Google&apos;s Agent Development Kit  <tspan class="sha">adk-python</tspan></text>
   <text x="450" y="330.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>landed two bug fixes in Apache Airflow  <tspan class="sha">c5d7f60</tspan></text>
   <text x="450" y="374.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>fixed the license-compliance audit in Apache Magpie  <tspan class="sha">99c983b</tspan></text>
   <text x="450" y="418.0" class="ln" dominant-baseline="middle" text-anchor="middle"><tspan class="pl">+ </tspan>closed a CLI dry-run hole in Cognee  <tspan class="sha">2de7ab0</tspan></text>

@@ -11,7 +11,7 @@ LINES = [  # (what shipped, short reference shown in grey)
     ("finished in the top 1% at three HackerRank Orchestrate editions", "orchestrate"),
     ("shipped a 48-operation Pinecone integration into Corsair", "f7820d6"),
     ("merged a file-descriptor leak fix into NumPy", "444afc2"),
-    ("patched Windows path parsing in Google&apos;s Agent Development Kit", "6f6106f"),
+    ("landed two changes in Google&apos;s Agent Development Kit", "adk-python"),
     ("landed two bug fixes in Apache Airflow", "c5d7f60"),
     ("fixed the license-compliance audit in Apache Magpie", "99c983b"),
     ("closed a CLI dry-run hole in Cognee", "2de7ab0"),
