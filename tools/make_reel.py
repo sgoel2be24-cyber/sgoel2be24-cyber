@@ -8,6 +8,7 @@ LINES = [  # (what shipped, short reference shown in grey)
     ("ranked #1 on the OSCI&apos;26 leaderboard with 240+ merged PRs", "osci&apos;26"),
     ("won a special award at the HackBlox 2026 open-source hackathon", "hackblox"),
     ("reached the DataForge 2026 finals at IIT Kharagpur", "dataforge"),
+    ("finished in the top 1% at three HackerRank Orchestrate editions", "orchestrate"),
     ("shipped a 48-operation Pinecone integration into Corsair", "f7820d6"),
     ("merged a file-descriptor leak fix into NumPy", "444afc2"),
     ("patched Windows path parsing in Google&apos;s Agent Development Kit", "6f6106f"),

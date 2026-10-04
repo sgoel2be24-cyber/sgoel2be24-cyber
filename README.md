@@ -6,7 +6,7 @@
 
 
 <a href="https://github.com/sgoel2be24-cyber?tab=repositories">
-  <img src="https://raw.githubusercontent.com/sgoel2be24-cyber/sgoel2be24-cyber/main/assets/upstream.svg" alt="ranked #1 on the OSCI&apos;26 leaderboard with 240+ merged PRs · won a special award at HackBlox 2026 · reached the DataForge 2026 finals at IIT Kharagpur · shipped a 48-operation Pinecone integration into Corsair · merged a file-descriptor leak fix into NumPy · patched Windows path parsing in Google&apos;s Agent Development Kit · landed two bug fixes in Apache Airflow · fixed the license-compliance audit in Apache Magpie · closed a CLI dry-run hole in Cognee · built a Go job queue that survives kill -9 with zero job loss · wrote a ReDoS analyzer that proves each finding with an attack string · built an incremental build engine with a content-addressed cache · built an offline screen assistant for blind users on the Snapdragon NPU · built an Android assistant you teach by doing a task once" width="900" />
+  <img src="https://raw.githubusercontent.com/sgoel2be24-cyber/sgoel2be24-cyber/main/assets/upstream.svg" alt="ranked #1 on the OSCI&apos;26 leaderboard with 240+ merged PRs · won a special award at HackBlox 2026 · reached the DataForge 2026 finals at IIT Kharagpur · finished in the top 1% at three HackerRank Orchestrate editions · shipped a 48-operation Pinecone integration into Corsair · merged a file-descriptor leak fix into NumPy · patched Windows path parsing in Google&apos;s Agent Development Kit · landed two bug fixes in Apache Airflow · fixed the license-compliance audit in Apache Magpie · closed a CLI dry-run hole in Cognee · built a Go job queue that survives kill -9 with zero job loss · wrote a ReDoS analyzer that proves each finding with an attack string · built an incremental build engine with a content-addressed cache · built an offline screen assistant for blind users on the Snapdragon NPU · built an Android assistant you teach by doing a task once" width="900" />
 </a>
 
 <br/>
@@ -52,8 +52,7 @@ evaluation work runs on the same stack: deterministic checks around probabilisti
 | 🥇 **#1 on the live leaderboard** | **Open Source Connect India '26**: 240+ merged pull requests across six projects. [Leaderboard](https://osci.osconnect.org/leaderboard) |
 | 🏆 **Special Award Winner** and finalist | **HackBlox 2026**, open-source hackathon by Hackers Cult, judged on best project. Built [Pact](https://github.com/sgoel2be24-cyber/pact) |
 | 🏅 **Finalist** | **DataForge 2026, IIT Kharagpur**: [Synapse Memory Lab](https://github.com/sgoel2be24-cyber/synapse-memory-lab-dataforge-2026-final) |
-| **#37 of 15,000+**, top 0.25% | **HackerRank Orchestrate, June 2026**: 15,000+ registered. [multimodal-evidence-review](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate) |
-| **#142 of 22,000+**, top 0.7% | **HackerRank Orchestrate, August 2026**: 22,000+ registered for the global 24-hour AI-agent hackathon |
+| **Top 1% in three editions** | **HackerRank Orchestrate 2026**, global 24-hour AI-agent hackathon: top 0.25% of 15,000+ in June ([multimodal-evidence-review](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate)), top 0.65% of 22,000+ in August, top 0.45% of 30,000+ in September ([Buy or Wait? agent](https://github.com/sgoel2be24-cyber/hackerrank-orchestrate-september-2026)) |
 
 ---
 
@@ -293,13 +292,13 @@ Pre-release testing platform that stress-tests structured AI tasks across open-s
 </details>
 
 <details>
-<summary><b>multimodal-evidence-review</b>: claim accuracy lifted from 70% to 85%, ranked #37 of 15,000+ at HackerRank Orchestrate</summary>
+<summary><b>multimodal-evidence-review</b>: claim accuracy lifted from 70% to 85%, top 0.25% of 15,000+ at HackerRank Orchestrate</summary>
 
 <br/>
 
 [Repo](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate) · `Python` `Gemini 2.5 Flash`
 
-Multimodal damage-claim adjudication pipeline — model output validated and repaired against a strict 14-column schema with tightly constrained enums. Semantic consistency rules lifted claim-status accuracy with zero additional model calls. SHA-256 content-addressed caching, resumable batch pipeline, graceful stop on quota errors. **Ranked #37 of 15,000+ registrants** at HackerRank Orchestrate, June 2026.
+Multimodal damage-claim adjudication pipeline — model output validated and repaired against a strict 14-column schema with tightly constrained enums. Semantic consistency rules lifted claim-status accuracy with zero additional model calls. SHA-256 content-addressed caching, resumable batch pipeline, graceful stop on quota errors. **Top 0.25% of 15,000+ registrants** at HackerRank Orchestrate, June 2026.
 
 </details>
 
