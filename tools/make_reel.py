@@ -12,7 +12,7 @@ LINES = [  # (what shipped, short reference shown in grey)
     ("shipped a 48-operation Pinecone integration into Corsair", "f7820d6"),
     ("merged a file-descriptor leak fix into NumPy", "444afc2"),
     ("landed two changes in Google&apos;s Agent Development Kit", "adk-python"),
-    ("landed two bug fixes in Apache Airflow", "c5d7f60"),
+    ("landed three bug fixes in Apache Airflow", "5ec2045"),
     ("fixed the license-compliance audit in Apache Magpie", "99c983b"),
     ("closed a CLI dry-run hole in Cognee", "2de7ab0"),
     ("built a Go job queue that survives kill -9 with zero job loss", "conveyor"),
