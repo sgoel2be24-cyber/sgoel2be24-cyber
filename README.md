@@ -52,7 +52,7 @@ evaluation work runs on the same stack: deterministic checks around probabilisti
 | 🥇 **#1 on the live leaderboard** | **Open Source Connect India '26**: 240+ merged pull requests across six projects. [Leaderboard](https://osci.osconnect.org/leaderboard) |
 | 🏆 **Special Award Winner** | **HackBlox 2026**, open-source hackathon by Hackers Cult, judged on best project. Built [Pact](https://github.com/sgoel2be24-cyber/pact) |
 | 🏅 **Finalist** | **DataForge 2026, IIT Kharagpur**: [Synapse Memory Lab](https://github.com/sgoel2be24-cyber/synapse-memory-lab-dataforge-2026-final) |
-| **Top 1% in three editions** | **HackerRank Orchestrate 2026**, global 24-hour AI-agent hackathon: top 0.25% of 15,000+ in June ([multimodal-evidence-review](https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate)), top 0.65% of 22,000+ in August, top 0.45% of 30,000+ in September ([Buy or Wait? agent](https://github.com/sgoel2be24-cyber/hackerrank-orchestrate-september-2026)) |
+| **Top 1% in three editions** | **HackerRank Orchestrate 2026**, global 24-hour AI-agent hackathon<ul><li><b>Top 0.25%</b> of 15,000+ registrants in June · <a href="https://github.com/sgoel2be24-cyber/multimodal-evidence-review-orchestrate">multimodal-evidence-review</a></li><li><b>Top 0.65%</b> of 22,000+ registrants in August</li><li><b>Top 0.45%</b> of 30,000+ registrants in September · <a href="https://github.com/sgoel2be24-cyber/hackerrank-orchestrate-september-2026">Buy or Wait? agent</a></li></ul> |
 
 ---
 
