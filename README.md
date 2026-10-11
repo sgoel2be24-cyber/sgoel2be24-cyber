@@ -73,7 +73,7 @@ Each card replays the mechanism the project is built around. Click one to open t
 
 ## Open source
 
-**Open Source Connect India '26** — currently **#1 on the [live leaderboard](https://osci.osconnect.org/leaderboard)**, with 240+ merged pull requests across six projects.
+**Open Source Connect India '26** — currently **#1 on the [live leaderboard](https://osci.osconnect.org/leaderboard)**, with 500+ merged pull requests across six projects.
 
 <details>
 <summary>What those pull requests fixed</summary>
